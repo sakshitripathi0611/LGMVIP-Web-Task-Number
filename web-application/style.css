@@ -1,0 +1,84 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0;
+}
+
+#get-users {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#get-users:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+main {
+  padding: 1rem;
+}
+
+.loader {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.user-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 20px 100px 20px 100px;
+}
+
+.user-card {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+}
+
+.user-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.user-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.user-card p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #888;
+}
